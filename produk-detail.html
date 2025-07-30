@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - THE ZERO LINE</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {'off-white': '#FAFAFA', 'concrete-grey': '#A9A9A9', 'charcoal-black': '#36454F', 'khaki': '#C3B091', 'deep-navy': '#000080', 'cobalt-blue': '#0047AB'},
+                    fontFamily: {'heading': ['"Playfair Display"', 'serif'], 'body': ['"Inter"', 'sans-serif']}
+                }
+            }
+        }
+    </script>
+    <style>
+        .size-option input:checked + label {background-color: #36454F; color: #FAFAFA; border-color: #36454F;}
+    </style>
+</head>
+<body class="bg-off-white font-body text-charcoal-black">
+
+<header class="sticky top-0 z-50 bg-off-white/80 backdrop-blur-lg border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <a href="index.html" class="text-left leading-none font-body font-bold text-xl tracking-wider">
+                <div>THE</div>
+                <div>ZERO LINE</div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="koleksi.html" class="hover:text-cobalt-blue transition-colors">Koleksi</a>
+                <a href="journal.html" class="hover:text-cobalt-blue transition-colors">Journal</a>
+                <a href="tentang.html" class="hover:text-cobalt-blue transition-colors">Tentang Kami</a>
+            </nav>
+            <div class="flex items-center space-x-5">
+                <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" aria-label="Wishlist" class="relative">
+                    <i id="wishlist-icon-header" class="far fa-heart"></i>
+                    <span id="wishlist-icon-qty" class="absolute -top-2 -right-3 bg-red-500 text-off-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                </a>
+                <a href="keranjang.html" aria-label="Shopping Cart" class="relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-icon-qty" class="absolute -top-2 -right-3 bg-cobalt-blue text-off-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-off-white/95 backdrop-blur-lg">
+            <a href="koleksi.html" class="block py-3 px-5 border-b border-gray-200">Koleksi</a>
+            <a href="journal.html" class="block py-3 px-5 border-b border-gray-200">Journal</a>
+            <a href="tentang.html" class="block py-3 px-5">Tentang Kami</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-5 py-16">
+        <div id="product-detail-container" class="grid md:grid-cols-2 gap-12">
+            <p class="col-span-2 text-center">Memuat detail produk...</p>
+        </div>
+    </main>
+
+    <footer class="bg-off-white py-16 border-t border-gray-200">
+        <div class="container mx-auto px-5 text-center">
+            <p class="text-charcoal-black/60 text-sm">&copy; 2025 THE ZERO LINE. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

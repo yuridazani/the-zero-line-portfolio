@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - THE ZERO LINE</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {'off-white': '#FAFAFA', 'concrete-grey': '#A9A9A9', 'charcoal-black': '#36454F', 'khaki': '#C3B091', 'deep-navy': '#000080', 'cobalt-blue': '#0047AB'},
+                    fontFamily: {'heading': ['"Playfair Display"', 'serif'], 'body': ['"Inter"', 'sans-serif']}
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-concrete-grey/20 font-body text-charcoal-black">
+
+    <main class="container mx-auto p-5 sm:p-10">
+        <div id="invoice-container" class="max-w-4xl mx-auto bg-off-white p-8 sm:p-12 shadow-sm">
+            <div class="flex justify-between items-start pb-8 border-b border-gray-200">
+                <div>
+                    <h1 class="font-heading text-4xl">Invoice</h1>
+                    <p class="text-charcoal-black/70 mt-2">Nomor Invoice: <span id="invoice-number">Memuat...</span></p>
+                    <p class="text-charcoal-black/70">Tanggal: <span id="invoice-date">Memuat...</span></p>
+                </div>
+                <div class="text-right">
+                    <div class="text-left leading-none font-body font-bold text-2xl tracking-wider">
+                        <div>THE</div>
+                        <div>ZERO LINE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-8 my-8">
+                <div>
+                    <h2 class="font-semibold mb-2">Ditagihkan Kepada:</h2>
+                    <p id="customer-name">Hamba Allah</p>
+                    <p id="customer-address" class="text-charcoal-black/70">Alamat tidak tersedia</p>
+                    <p id="customer-email" class="text-charcoal-black/70">email@example.com</p>
+                </div>
+                <div class="text-left sm:text-right">
+                     <h2 class="font-semibold mb-2">Status Pembayaran:</h2>
+                     <p class="font-bold text-green-600">LUNAS</p>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="bg-gray-50 border-b border-gray-200">
+                            <th class="p-4 font-semibold">Deskripsi</th>
+                            <th class="p-4 font-semibold text-center">Jumlah</th>
+                            <th class="p-4 font-semibold text-right">Harga Satuan</th>
+                            <th class="p-4 font-semibold text-right">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoice-items">
+                        </tbody>
+                </table>
+            </div>
+
+            <div id="invoice-summary" class="flex justify-end mt-8">
+                 </div>
+        </div>
+    </main>
+    
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

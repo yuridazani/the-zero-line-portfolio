@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih - THE ZERO LINE</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {'off-white': '#FAFAFA', 'concrete-grey': '#A9A9A9', 'charcoal-black': '#36454F', 'khaki': '#C3B091', 'deep-navy': '#000080', 'cobalt-blue': '#0047AB'},
+                    fontFamily: {'heading': ['"Playfair Display"', 'serif'], 'body': ['"Inter"', 'sans-serif']}
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white font-body text-charcoal-black flex flex-col min-h-screen">
+
+    <header class="border-b border-gray-200">
+        <div class="container mx-auto text-center p-5">
+            <a href="index.html" class="inline-block text-left leading-none font-body font-bold text-2xl tracking-wider">
+                <div>THE</div>
+                <div>ZERO LINE</div>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-16">
+        <div class="container mx-auto px-5 max-w-2xl text-center">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-sm">
+                <div class="mx-auto bg-charcoal-black rounded-full h-16 w-16 flex items-center justify-center mb-6">
+                    <i class="fas fa-check text-3xl text-off-white"></i>
+                </div>
+                <h1 class="font-heading text-3xl md:text-4xl text-charcoal-black mb-2">Terima Kasih atas Pesanan Anda.</h1>
+                <p class="text-charcoal-black/70 mb-8">Kami telah menerima pesanan Anda dan akan segera memprosesnya.</p>
+                
+                <div class="bg-gray-50 border border-gray-200 p-4 rounded-lg mb-8">
+                    <a href="invoice.html" class="font-semibold text-cobalt-blue hover:underline">
+                        Lihat Invoice Anda
+                    </a>
+                </div>
+
+                <a href="koleksi.html" class="bg-charcoal-black text-off-white font-bold py-3 px-10 hover:bg-black transition-colors">
+                    Lanjutkan Belanja
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-8 mt-16 text-center">
+        <p class="text-charcoal-black/60 text-sm">&copy; 2025 THE ZERO LINE. All rights reserved.</p>
+    </footer>
+    
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

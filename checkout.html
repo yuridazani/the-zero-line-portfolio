@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - THE ZERO LINE</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {'off-white': '#FAFAFA', 'concrete-grey': '#A9A9A9', 'charcoal-black': '#36454F', 'khaki': '#C3B091', 'deep-navy': '#000080', 'cobalt-blue': '#0047AB'},
+                    fontFamily: {'heading': ['"Playfair Display"', 'serif'], 'body': ['"Inter"', 'sans-serif']}
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white font-body text-charcoal-black">
+
+    <header class="border-b border-gray-200">
+        <div class="container mx-auto text-center p-5">
+            <a href="index.html" class="inline-block text-left leading-none font-body font-bold text-2xl tracking-wider">
+                <div>THE</div>
+                <div>ZERO LINE</div>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-5 py-16">
+        <div class="grid lg:grid-cols-2 lg:gap-24">
+            
+            <div class="order-2 lg:order-1">
+                <h1 class="font-heading text-3xl mb-8">Detail Pengiriman</h1>
+                <form id="checkout-form">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="email" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                        </div>
+                        <div class="pt-4">
+                            <h2 class="font-semibold text-lg mb-2">Alamat Pengiriman</h2>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="col-span-2 sm:col-span-1">
+                                    <label for="first-name" class="block text-sm font-medium mb-1">Nama Depan</label>
+                                    <input type="text" id="first-name" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                                <div class="col-span-2 sm:col-span-1">
+                                    <label for="last-name" class="block text-sm font-medium mb-1">Nama Belakang</label>
+                                    <input type="text" id="last-name" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                                <div class="col-span-2">
+                                    <label for="address" class="block text-sm font-medium mb-1">Alamat</label>
+                                    <input type="text" id="address" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                                <div class="col-span-2">
+                                    <label for="city" class="block text-sm font-medium mb-1">Kota</label>
+                                    <input type="text" id="city" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                                <div class="col-span-2 sm:col-span-1">
+                                    <label for="province" class="block text-sm font-medium mb-1">Provinsi</label>
+                                    <input type="text" id="province" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                                <div class="col-span-2 sm:col-span-1">
+                                    <label for="postal-code" class="block text-sm font-medium mb-1">Kode Pos</label>
+                                    <input type="text" id="postal-code" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                                <div class="col-span-2">
+                                    <label for="phone" class="block text-sm font-medium mb-1">Telepon</label>
+                                    <input type="tel" id="phone" class="w-full border border-gray-300 p-2 focus:border-charcoal-black focus:ring-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <button type="submit" class="w-full bg-charcoal-black text-off-white font-bold py-3 hover:bg-black transition-colors">
+                            Selesaikan Pesanan
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="checkout-summary-container" class="order-1 lg:order-2 bg-gray-50 p-6 border-l border-gray-200">
+                <p>Memuat ringkasan pesanan...</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="py-8 mt-16 text-center">
+        <p class="text-charcoal-black/60 text-sm">&copy; 2025 THE ZERO LINE. All rights reserved.</p>
+    </footer>
+    
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

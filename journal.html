@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - THE ZERO LINE</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'off-white': '#FAFAFA',
+                        'concrete-grey': '#A9A9A9',
+                        'charcoal-black': '#36454F',
+                        'khaki': '#C3B091',
+                        'deep-navy': '#000080',
+                        'cobalt-blue': '#0047AB',
+                    },
+                    fontFamily: {
+                        'heading': ['"Playfair Display"', 'serif'],
+                        'body': ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white font-body text-charcoal-black">
+
+<header class="sticky top-0 z-50 bg-off-white/80 backdrop-blur-lg border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <a href="index.html" class="text-left leading-none font-body font-bold text-xl tracking-wider">
+                <div>THE</div>
+                <div>ZERO LINE</div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="koleksi.html" class="hover:text-cobalt-blue transition-colors">Koleksi</a>
+                <a href="journal.html" class="hover:text-cobalt-blue transition-colors">Journal</a>
+                <a href="tentang.html" class="hover:text-cobalt-blue transition-colors">Tentang Kami</a>
+            </nav>
+            <div class="flex items-center space-x-5">
+                <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" aria-label="Wishlist" class="relative">
+                    <i id="wishlist-icon-header" class="far fa-heart"></i>
+                    <span id="wishlist-icon-qty" class="absolute -top-2 -right-3 bg-red-500 text-off-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                </a>
+                <a href="keranjang.html" aria-label="Shopping Cart" class="relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-icon-qty" class="absolute -top-2 -right-3 bg-cobalt-blue text-off-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-off-white/95 backdrop-blur-lg">
+            <a href="koleksi.html" class="block py-3 px-5 border-b border-gray-200">Koleksi</a>
+            <a href="journal.html" class="block py-3 px-5 border-b border-gray-200">Journal</a>
+            <a href="tentang.html" class="block py-3 px-5">Tentang Kami</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-5 py-16">
+        <div class="text-center mb-12">
+            <h1 class="font-heading text-4xl md:text-5xl">Journal</h1>
+            <p class="mt-2 text-charcoal-black/70">Inspirasi, proses, dan cerita di balik fondasi gaya Anda.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            
+            <div class="group">
+                <div class="bg-concrete-grey/20 mb-4 overflow-hidden">
+                    <a href="#">
+                        <img src="img/icarus-chu-cNRShoSKMmI-unsplash.jpg" alt="Inspirasi Arsitektur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </a>
+                </div>
+                <p class="text-sm text-charcoal-black/60 mb-1">Desain</p>
+                <h2 class="font-heading text-2xl font-semibold text-charcoal-black mb-2">
+                    <a href="#" class="hover:text-cobalt-blue transition-colors">Presisi Arsitektur dalam Siluet Pakaian</a>
+                </h2>
+                <p class="text-charcoal-black/80">Menelusuri bagaimana prinsip desain arsitektural—garis bersih, struktur, dan ruang negatif—menginspirasi potongan 'anti-fit' kami.</p>
+            </div>
+
+            <div class="group">
+                <div class="bg-concrete-grey/20 mb-4 overflow-hidden">
+                    <a href="#">
+                        <img src="img/someofakind-WaTX4_2fD9k-unsplash.jpg" alt="Kultur Hip-Hop 90an" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </a>
+                </div>
+                <p class="text-sm text-charcoal-black/60 mb-1">Kultur</p>
+                <h2 class="font-heading text-2xl font-semibold text-charcoal-black mb-2">
+                    <a href="#" class="hover:text-cobalt-blue transition-colors">The Golden Era: Mengapa Hip-Hop 90-an Abadi</a>
+                </h2>
+                <p class="text-charcoal-black/80">Sebuah penghormatan pada era keemasan hip-hop yang kebebasan berekspresinya menjadi DNA dari siluet longgar THE ZERO LINE.</p>
+            </div>
+
+            <div class="group">
+                <div class="bg-concrete-grey/20 mb-4 overflow-hidden">
+                    <a href="#">
+                        <img src="img/cd5eb660-fe88-4da3-b19b-ab2757d59869.jpeg" alt="Panduan Gaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </a>
+                </div>
+                <p class="text-sm text-charcoal-black/60 mb-1">Gaya</p>
+                <h2 class="font-heading text-2xl font-semibold text-charcoal-black mb-2">
+                    <a href="#" class="hover:text-cobalt-blue transition-colors">Panduan The Intentionalist: Membangun Gaya dari Titik Nol</a>
+                </h2>
+                <p class="text-charcoal-black/80">Bagaimana cara menggunakan 'Oversized T-shirt' kami sebagai kanvas untuk tiga tampilan berbeda—dari kasual hingga semi-formal.</p>
+            </div>
+
+            </div>
+    </main>
+    
+    <footer class="bg-off-white py-16 mt-16 border-t border-gray-200">
+        <div class="container mx-auto px-5 text-center">
+            <a href="index.html" class="inline-block mb-6 text-center font-body font-bold text-xl tracking-wider">
+                THE ZERO LINE
+            </a>
+            <div class="flex justify-center space-x-6 mb-8 text-lg">
+                <a href="#" class="hover:text-cobalt-blue transition-colors">Instagram</a>
+                <a href="#" class="hover:text-cobalt-blue transition-colors">TikTok</a>
+                <a href="#" class="hover:text-cobalt-blue transition-colors">Email</a>
+            </div>
+            <p class="text-charcoal-black/60 text-sm">&copy; 2025 THE ZERO LINE. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

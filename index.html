@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ZERO LINE - The Fundamental Starting Point.</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'off-white': '#FAFAFA',
+                        'concrete-grey': '#A9A9A9',
+                        'charcoal-black': '#36454F',
+                        'khaki': '#C3B091',
+                        'deep-navy': '#000080',
+                        'cobalt-blue': '#0047AB',
+                    },
+                    fontFamily: {
+                        'heading': ['"Playfair Display"', 'serif'],
+                        'body': ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white font-body text-charcoal-black">
+
+    <header class="sticky top-0 z-50 bg-off-white/80 backdrop-blur-lg border-b border-gray-200">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <a href="index.html" class="text-left leading-none font-body font-bold text-xl tracking-wider">
+                <div>THE</div>
+                <div>ZERO LINE</div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="koleksi.html" class="hover:text-cobalt-blue transition-colors">Koleksi</a>
+                <a href="journal.html" class="hover:text-cobalt-blue transition-colors">Journal</a>
+                <a href="tentang.html" class="hover:text-cobalt-blue transition-colors">Tentang Kami</a>
+            </nav>
+            <div class="flex items-center space-x-5">
+                <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" aria-label="Wishlist" class="relative">
+                    <i id="wishlist-icon-header" class="far fa-heart"></i>
+                    <span id="wishlist-icon-qty" class="absolute -top-2 -right-3 bg-red-500 text-off-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                </a>
+                <a href="keranjang.html" aria-label="Shopping Cart" class="relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-icon-qty" class="absolute -top-2 -right-3 bg-cobalt-blue text-off-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden">0</span>
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-off-white/95 backdrop-blur-lg">
+            <a href="koleksi.html" class="block py-3 px-5 border-b border-gray-200">Koleksi</a>
+            <a href="journal.html" class="block py-3 px-5 border-b border-gray-200">Journal</a>
+            <a href="tentang.html" class="block py-3 px-5">Tentang Kami</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-screen min-h-[700px] flex items-center justify-center text-center text-off-white">
+            <div class="absolute inset-0 bg-charcoal-black/60 z-10"></div> <img src="img/joel-muniz-aJe1a2ZpubA-unsplash.jpg" alt="Latar belakang lanskap" class="absolute inset-0 w-full h-full object-cover z-0">
+            
+            <div class="relative z-20 p-8">
+                <h1 class="font-heading text-5xl md:text-7xl mb-4 drop-shadow-md">The Fundamental Starting Point.</h1>
+                <p class="text-off-white/90 max-w-xl mx-auto mb-8 drop-shadow-sm">Merancang pakaian fungsional sebagai 'titik nol' bagi individu untuk membangun gaya otentik mereka.</p>
+                <a href="koleksi.html" class="bg-off-white text-charcoal-black font-bold py-3 px-10 hover:bg-white transition-colors">
+                    Jelajahi Koleksi
+                </a>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-5">
+                <h2 class="text-center font-heading text-4xl mb-12">Produk Unggulan</h2>
+                <div id="featured-products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <section class="bg-charcoal-black text-off-white py-20">
+            <div class="container mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-heading text-4xl mb-6">Titik Awal Anda.</h2>
+                    <p class="text-off-white/80 leading-relaxed max-w-lg">
+                        Di tengah lautan tren, kami merasakan sebuah keheningan. Sebuah kebutuhan akan titik awal, sebuah garis dasar yang netral dan jujur. THE ZERO LINE lahir dari pencarian akan fondasi tersebut.
+                    </p>
+                    <a href="#" class="inline-block mt-6 font-bold border-b border-off-white/50 hover:border-off-white transition-colors">
+                        Baca Cerita Kami
+                    </a>
+                </div>
+                    <div class="hidden md:block">
+                    <div class="h-96 w-full flex items-center justify-center bg-center bg-cover bg-no-repeat" style="background-image: url('img/icarus-chu-cNRShoSKMmI-unsplash.jpg');">
+                        <p class="text-charcoal-black/70 bg-white/70 px-4 py-2 rounded">Architectural Inspiration</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-off-white py-16">
+        <div class="container mx-auto px-5 text-center">
+            <a href="index.html" class="inline-block mb-6 text-center font-body font-bold text-xl tracking-wider">
+                THE ZERO LINE
+            </a>
+            <div class="flex justify-center space-x-6 mb-8 text-lg">
+                <a href="#" class="hover:text-cobalt-blue transition-colors">Instagram</a>
+                <a href="#" class="hover:text-cobalt-blue transition-colors">TikTok</a>
+                <a href="#" class="hover:text-cobalt-blue transition-colors">Email</a>
+            </div>
+            <p class="text-charcoal-black/60 text-sm">&copy; 2025 THE ZERO LINE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

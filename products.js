@@ -1,0 +1,19 @@
+// products.js
+const products = [
+  {id: 1, name: 'Oversized T-shirt', category: 'Pakaian', subCategory: 'T-shirt', price: 289000, description: 'Kaos katun heavyweight dengan siluet anti-fit yang terstruktur dan boxy.', image: 'img/Oversized T-shirt.jpeg'},
+  {id: 2, name: 'Oversized Sweaters', category: 'Pakaian', subCategory: 'Sweater & Sweatshirt', price: 499000, description: 'Sweater rajut katun dengan potongan longgar dan detail subtil untuk kenyamanan maksimal.', image: 'img/Oversized Sweater.jpeg'},
+  {id: 3, name: 'Oversized Sweatshirt', category: 'Pakaian', subCategory: 'Sweater & Sweatshirt', price: 449000, description: 'Sweatshirt bahan fleece tebal dengan bahu turun dan nuansa vintage-wash.', image: 'img/Oversized Sweatshirt.jpeg'},
+  {id: 4, name: 'Bomber Jacket', category: 'Pakaian', subCategory: 'Jacket', price: 799000, description: 'Jaket bomber dengan siluet menggembung yang khas, dilengkapi detail fungsional dan hardware premium.', image: 'img/Bomber Jacket.jpeg'},
+  {id: 5, name: 'Half Zip Sweater', category: 'Pakaian', subCategory: 'Sweater & Sweatshirt', price: 529000, description: 'Sweater dengan ritsleting setengah badan, memadukan gaya sporty dan streetwear.', image: 'img/half zip sweater.jpeg'},
+  {id: 6, name: 'Wide Leg Jeans', category: 'Pakaian', subCategory: 'Jeans & Pants', price: 649000, description: 'Jeans denim tebal dengan potongan kaki yang sangat lebar, terinspirasi dari estetika Y2K.', image: 'img/wide leg jeans.jpeg'},
+  {id: 7, name: 'Wide Leg Cargo Pants', category: 'Pakaian', subCategory: 'Jeans & Pants', price: 599000, description: 'Celana kargo fungsional dengan kantong geometris dan siluet kaki lebar.', image: 'img/cargo.jpeg'},
+  {id: 8, name: 'Wide Parachute Pants', category: 'Pakaian', subCategory: 'Jeans & Pants', price: 549000, description: 'Celana ringan dari bahan nilon teknis dengan potongan sangat longgar dan detail tali serut.', image: 'img/parasut.jpeg'},
+  {id: 9, name: 'Ripped Pants', category: 'Pakaian', subCategory: 'Jeans & Pants', price: 679000, description: 'Celana jeans dengan detail distressed yang halus dan sobekan yang terkurasi, bukan berantakan.', image: 'img/ripped.jpeg'},
+  {id: 10, name: 'Straight Jeans', category: 'Pakaian', subCategory: 'Jeans & Pants', price: 629000, description: 'Jeans denim klasik dengan potongan lurus dari pinggul hingga pergelangan kaki.', image: 'img/straight.jpeg'},
+  {id: 11, name: 'Baggy Jeans', category: 'Pakaian', subCategory: 'Jeans & Pants', price: 659000, description: 'Jeans dengan potongan sangat longgar di seluruh bagian, berakar pada kultur skate dan hip-hop.', image: 'img/baggy.jpeg'},
+  {id: 12, name: 'Silver Rings', category: 'Aksesoris', subCategory: 'Jewelry', price: 349000, description: 'Cincin perak dengan desain chunky, geometris, atau industrial.', image: 'img/download.jpeg'},
+  {id: 13, name: 'Silver Earrings', category: 'Aksesoris', subCategory: 'Jewelry', price: 299000, description: 'Anting perak dengan gaya hoop, stud, atau desain edgy lainnya.', image: 'img/earrings.jpeg'},
+  {id: 14, name: 'Chain Necklaces', category: 'Aksesoris', subCategory: 'Jewelry', price: 459000, description: 'Kalung rantai perak dengan nuansa industrial, bisa berupa cuban link atau ball chain.', image: 'img/necklace.jpeg'},
+  {id: 15, name: 'Functional Bags', category: 'Aksesoris', subCategory: 'Bags', price: 399000, description: 'Tas fungsional seperti tote bag kanvas tebal atau sling bag nilon teknis.', image: 'img/bag.jpeg'},
+  {id: 16, name: 'Headwear', category: 'Aksesoris', subCategory: 'Headwear', price: 249000, description: 'Topi seperti beanie rajut atau bucket hat dari bahan kanvas.', image: 'img/beanie.jpeg'}
+];
