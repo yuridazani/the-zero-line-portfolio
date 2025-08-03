@@ -1,6 +1,6 @@
 # THE ZERO LINE - Website E-commerce (Front-End Concept)
 
-[THE ZERO LINE Screenshot]((https://drive.google.com/file/d/1xVcNvYkE59vmnrCdhlOVn7z1iCEKn_he/view?usp=drive_link))
+![THE ZERO LINE Screenshot]((https://drive.google.com/file/d/1xVcNvYkE59vmnrCdhlOVn7z1iCEKn_he/view?usp=sharing))
 
 ## 📄 Tentang Proyek
 
