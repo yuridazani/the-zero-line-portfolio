@@ -1,6 +1,6 @@
 # THE ZERO LINE - Website E-commerce (Front-End Concept)
 
-![THE ZERO LINE Screenshot]([https://via.placeholder.com/800x450.png/36454F/FAFAFA/?text=THE+ZERO+LINE+Showcase](https://github.com/yuridazani/the-zero-line-portfolio/blob/main/img/zero-line.png))
+[THE ZERO LINE Screenshot]((https://github.com/yuridazani/the-zero-line-portfolio/blob/main/img/zero-line.png))
 
 ## 📄 Tentang Proyek
 
